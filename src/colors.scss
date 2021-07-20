@@ -1,0 +1,18 @@
+$white: #fff;
+$themeColor: #7bcc44;
+
+.bg-white {
+	background-color: $white;
+}
+.bg-black {
+	background-color: #000;
+}
+.text-white {
+	color: $white;
+}
+.bg-theme {
+	background-color: $themeColor;
+}
+.text-theme {
+	color: $themeColor;
+}

@@ -1,0 +1,13 @@
+{
+	"name": "forecast",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"serve": "live-server --port=8080 --no-browser",
+		"sass": "sass src/:dist/ -w"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

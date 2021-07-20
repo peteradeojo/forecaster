@@ -1,0 +1,63 @@
+$fontDefault: 10px;
+
+// ROOT CONFIGURATION
+* {
+	font-size: $fontDefault;
+	margin: 0rem;
+	padding: 0rem;
+	box-sizing: border-box;
+}
+
+// ROOT CONFIG
+
+// TEXT AND FONTS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Fascinate Inline', Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 3.6em;
+}
+h2 {
+	font-size: 3.2em;
+}
+
+ul {
+	list-style: none;
+}
+li {
+	font-size: 1.6rem;
+}
+#timeline {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	li {
+		width: 80px;
+		height: 80px;
+		margin: 0px 2px 4px;
+		padding-top: 8px;
+		text-align: center;
+		border: 2px solid lightblue;
+		border-radius: 6px 6px 0 0;
+		cursor: pointer;
+	}
+	li:hover {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+}
+
+// TEXT AND FONTS
+
+// BOX MODELS
+.container {
+	padding: 1rem;
+	margin: auto;
+}
+
+// BOX MODELS

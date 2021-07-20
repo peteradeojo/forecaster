@@ -1,0 +1,21 @@
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-theme {
+  background-color: #7bcc44;
+}
+
+.text-theme {
+  color: #7bcc44;
+}
+
+/*# sourceMappingURL=colors.css.map */
