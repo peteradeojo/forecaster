@@ -32,8 +32,9 @@ ul {
 }
 li,
 p,
-span {
-	font-size: inherit !important;
+span,
+button {
+	font-size: 1.4rem;
 }
 .text-large {
 	font-size: 1.7em !important;
@@ -98,6 +99,19 @@ span {
 // BOX MODELS
 
 // CUSTOM shit
+.btn {
+	padding: 0.8 * $fontDefault 1.6 * $fontDefault;
+	margin-bottom: 0.4 * $fontDefault;
+	border-radius: 6px;
+	border: 0;
+}
+.btn:hover {
+	background-color: lighten($color: #333, $amount: 5%);
+}
+.btn-dark {
+	background-color: #333;
+	color: #fff;
+}
 #timeline {
 	display: flex;
 	flex-wrap: wrap;
@@ -130,6 +144,7 @@ span {
 	table {
 		td {
 			padding: 6px;
+			font-size: 1.4em;
 		}
 		td:nth-child(odd) {
 			font-weight: bold;

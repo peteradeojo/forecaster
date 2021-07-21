@@ -29,8 +29,9 @@ ul {
 
 li,
 p,
-span {
-  font-size: inherit !important;
+span,
+button {
+  font-size: 1.4rem;
 }
 
 .text-large {
@@ -402,6 +403,22 @@ span {
   padding-right: 5rem;
 }
 
+.btn {
+  padding: 8px 16px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.btn:hover {
+  background-color: #404040;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+}
+
 #timeline {
   display: flex;
   flex-wrap: wrap;
@@ -435,6 +452,7 @@ span {
 }
 #info-display table td {
   padding: 6px;
+  font-size: 1.4em;
 }
 #info-display table td:nth-child(odd) {
   font-weight: bold;

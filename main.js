@@ -84,7 +84,6 @@
 		const base = new Date().valueOf();
 
 		const forecast = await getForeCast();
-		localStorage.setItem('forecast', JSON.stringify(forecast.daily));
 
 		for (let i = 0; i <= 7; i += 1) {
 			let date = new Date(base + 1000 * 60 * 60 * 24 * i);
@@ -155,5 +154,36 @@
 		});
 	};
 
-	loadPage();
+	window.addEventListener('load', () => {
+		loadPage();
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker
+				.register('sw.js')
+				.then((sw) => {
+					console.log(`Service worker registered ${sw.scope}`);
+				})
+				.catch((err) => console.error);
+		}
+	});
+
+	window.addEventListener('beforeinstallprompt', (e) => {
+		let deferredPrompt;
+		e.preventDefault();
+		deferredPrompt = e;
+
+		const button = document.createElement('button');
+		button.innerHTML = 'Install';
+		button.classList.add('btn', 'btn-dark');
+		document.querySelector('main > div').prepend(button);
+		button.addEventListener('click', async () => {
+			await deferredPrompt.prompt();
+			const { outcome } = await deferredPrompt.userChoice;
+			if (outcome === 'accepted') {
+				deferredPrompt = null;
+				document.querySelector('main > div').removeChild(button);
+			}
+		});
+	});
+
+	// select('main').appendChild(button);
 })();
