@@ -7,6 +7,10 @@
 		"serve": "live-server --port=8080 --no-browser",
 		"sass": "sass src/:dist/ -w"
 	},
+	"dependencies": {
+		"live-server": "^1.2.1",
+		"sass": "^1.35.2"
+	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC"
