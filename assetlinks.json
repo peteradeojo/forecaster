@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "io.github.peteradeojo.twa",
+                   "sha256_cert_fingerprints": ["78:5A:55:44:E1:EA:92:5C:DC:04:42:47:17:53:C2:9B:95:7D:D6:A4:91:2F:CD:0F:D0:3E:36:BA:4D:DF:CA:02"] }
+    }]
